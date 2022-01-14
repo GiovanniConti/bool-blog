@@ -10,6 +10,7 @@
 
 @section('main_content')
     <div class="container">
+      <a href="{{route('posts.create')}}" class="btn btn-primary">Crea un nuovo post</a>
       <div class="row">
         @foreach ($posts as $post)
           <div class="card" style="width: 18rem;">
@@ -21,6 +22,7 @@
               <p class="card-text">{{$post->author}}</p>
               <p class="card-text">{{$post->category}}</p>
               <a href="{{route('posts.show', $post->id)}}" class="btn btn-primary">Vedi post completo</a>
+              <a href="{{route('posts.edit', $post->id)}}" class="btn btn-primary">Modifica il post</a>
             </div>
           </div>
         @endforeach

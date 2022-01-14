@@ -20,6 +20,11 @@
               {{-- <a href="{{route('posts.show', $post->id)}}" class="btn btn-primary">Vedi post completo</a> --}}
             </div>
           </div>
+          <form action="{{ route('posts.destroy', $post->id) }}" method='post'>
+            @csrf
+            @method('DELETE')
+            <input type='submit' value='Elimina' class='btn btn-danger'>
+          </form>
     </div>
 @endsection
     
