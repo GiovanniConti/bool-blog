@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', 'Detagli post' . $post->title)
+@section('title', 'Detagli post ' . $post->title)
 
 @section('page_header')
 <header>
