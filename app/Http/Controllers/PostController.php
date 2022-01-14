@@ -41,7 +41,7 @@ class PostController extends Controller
       $post->fill($request->all());
       $post->save();
 
-      return redirect()->route('home.index');
+      return redirect()->route('posts.show', $post->id);
     }
 
     /**
