@@ -8,4 +8,6 @@
 
 @section('main_content')
   <h2>Welcome in Boolean Blog</h2>
+  <a href="{{route('posts.index')}}" class="btn btn-primary">Vedi tutti i post</a>
+
 @endsection
