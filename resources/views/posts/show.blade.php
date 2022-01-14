@@ -23,7 +23,7 @@
           <form action="{{ route('posts.destroy', $post->id) }}" method='post'>
             @csrf
             @method('DELETE')
-            <input type='submit' value='Elimina' class='btn btn-danger'>
+            <input type='submit' value='Elimina' class='btn btn-danger my-3'>
           </form>
     </div>
 @endsection
